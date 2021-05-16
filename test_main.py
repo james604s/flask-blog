@@ -72,5 +72,18 @@ def thankyou():
 def pup_name(name):
     return render_template('puppy.html',name=name)
 
+class Dog():
+    # class object attributes
+    species = "mammel"
+    def __init__(self, input_breed, name):
+        self.breed = input_breed
+        self.name = name
+
+x = Dog('a','b')
+
+print(x.breed,x.name)
+print(x.species)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
