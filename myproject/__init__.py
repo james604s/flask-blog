@@ -24,12 +24,3 @@ login_manager.init_app(app)
 
 # Tell users what view to go to when they need to login.
 login_manager.login_view = "login"
-
-# NOTE! These imports need to come after you've defined db, otherwise you will
-# get errors in your models.py files.
-## Grab the blueprints from the other views.py files for each "app"
-# from myproject.puppies.views import puppies_blueprint
-# from myproject.owners.views import owners_blueprint
-
-# app.register_blueprint(owners_blueprint,url_prefix="/owners")
-# app.register_blueprint(puppies_blueprint,url_prefix='/puppies')
